@@ -20,6 +20,6 @@
     \
     - Route::get('pizza/{id}', 'Api\PizzaController@show') - get запрос, возвращает пиццц по уникальному id из базы данных
     \
-    - Route::post('order', ['uses' => 'Api\OrderController@show', 'https']) - post запрос, записывает в базу данных оформленный заказ
+    - Route::post('order', 'Api\OrderController@store') - post запрос, записывает в базу данных оформленный заказ
     \
     - Route::get('order/{id}', 'Api\OrderController@show') - get запрос, возвращает заказ по уникальному id из базы данных
